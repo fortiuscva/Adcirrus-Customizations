@@ -1,7 +1,7 @@
 
 reportextension 50103 "ADC Sales Invoice NA Extends" extends "Sales Invoice NA"
 {
-    RDLCLayout = './SMBSalesInvoiceNA.rdl';
+    RDLCLayout = './src/reportextension/SMBSalesInvoiceNA.rdl';
     dataset
     {
 
