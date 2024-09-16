@@ -21,6 +21,10 @@ reportextension 50103 "ADC Sales Invoice NA Extends" extends "Sales Invoice NA"
             {
 
             }
+            column(ADCQuantityCaptionLbl; QtyCaptionLbl)
+            {
+
+            }
         }
 
         add(SalesInvLine)
@@ -172,5 +176,6 @@ reportextension 50103 "ADC Sales Invoice NA Extends" extends "Sales Invoice NA"
         TempSalesInvoiceLineRec: Record "Sales Invoice Line" temporary;
         JobPlanningLine: Record "Job Planning Line";
         PlanningDueDateCaptionLbl: Label 'Work Date';
-        InvoiceFooterTextLbl: Label '<p>Thank you for your business.</br> You can pay this invoice online.<a href=https://adcirrus.connectboosterportal.com/platform/paynow/invoice/>Pay Online</a></p>';
+        QtyCaptionLbl: Label 'Quantity/Hrs.';
+        InvoiceFooterTextLbl: Label '<p>Thank you for your business.</br> You can pay this invoice online. <a href=https://adcirrus.connectboosterportal.com/platform/paynow/invoice/>Here</a></p>';
 }
