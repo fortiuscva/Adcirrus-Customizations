@@ -384,6 +384,9 @@
         <Field Name="ADCInvoiceFooterTextLbl">
           <DataField>ADCInvoiceFooterTextLbl</DataField>
         </Field>
+        <Field Name="ADCQuantityCaptionLbl">
+          <DataField>ADCQuantityCaptionLbl</DataField>
+        </Field>
         <Field Name="ADCTotalQty">
           <DataField>ADCTotalQty</DataField>
         </Field>
@@ -549,7 +552,7 @@ Cstr(Fields!BillCaption.Value) + Chr(177) +
 Cstr(Fields!DocumentText.Value) + Chr(177) + 
 Cstr(Fields!TaxIdentTypeCaption.Value)
  
-+ Chr(177) + Cstr(Last(Fields!TotalQty.Value)) + Chr(177) + Cstr(Fields!TotalHrsCaption.Value) ,Fields!No_SalesInvHeader.Value)</Hidden>
++ Chr(177) + Cstr(Last(Fields!ADCTotalQty.Value)) + Chr(177) + Cstr(Fields!ADCTotalHrsCaption.Value) ,Fields!No_SalesInvHeader.Value)</Hidden>
                           </Visibility>
                           <Style>
                             <Border>
@@ -798,7 +801,7 @@ Cstr(Fields!TaxIdentTypeCaption.Value)
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!ItemDescriptionExtCaption.Value</Value>
+                                  <Value>=Fields!ADCItemDescriptionExtCaption.Value</Value>
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -830,7 +833,7 @@ Cstr(Fields!TaxIdentTypeCaption.Value)
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!WorkDescExtCaption.Value</Value>
+                                  <Value>=Fields!ADCWorkDescExtCaption.Value</Value>
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -860,7 +863,7 @@ Cstr(Fields!TaxIdentTypeCaption.Value)
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!QuantityCaption.Value</Value>
+                                  <Value>=Fields!ADCQuantityCaptionLbl.Value</Value>
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -882,6 +885,7 @@ Cstr(Fields!TaxIdentTypeCaption.Value)
                             <PaddingRight>5pt</PaddingRight>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
