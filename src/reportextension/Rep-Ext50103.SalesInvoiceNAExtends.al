@@ -177,5 +177,5 @@ reportextension 50103 "ADC Sales Invoice NA Extends" extends "Sales Invoice NA"
         JobPlanningLine: Record "Job Planning Line";
         PlanningDueDateCaptionLbl: Label 'Work Date';
         QtyCaptionLbl: Label 'Quantity/Hrs.';
-        InvoiceFooterTextLbl: Label '<p>Thank you for your business.</br> You can pay this invoice online. <a href=https://adcirrus.connectboosterportal.com/platform/paynow/invoice/>Here</a></p>';
+        InvoiceFooterTextLbl: Label '<p>Thank you for your business.</br> You can pay this invoice online. <a href=https://adcirruserp.connectboosterportal.com/platform/paynow/invoice/>Here</a></p>';
 }
